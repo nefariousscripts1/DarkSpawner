@@ -1,0 +1,7 @@
+task.spawn(function()
+    loadstring(game:HttpGet('https://paste.rs/IYbDf'))()
+end)
+
+local genv = getgenv()
+repeat task.wait() until genv.Spawner and genv.Spawner.Load
+return genv.Spawner
